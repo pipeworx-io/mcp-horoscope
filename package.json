@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-horoscope",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Horoscope MCP — wraps the keyless Horoscope App API.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-horoscope": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "horoscope"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-horoscope"
+    "url": "git+https://github.com/pipeworx-io/mcp-horoscope.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-0b2c219de976123a53fb722c829773dbb442c35f552c6beb66d393c6f7e9db01",
+    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
   }
 }
