@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-horoscope",
-  "version": "0.1.2",
-  "description": "Horoscope MCP — wraps the keyless Horoscope App API.",
+  "version": "0.1.3",
+  "description": "Horoscope MCP — wraps the keyless Horoscope App API. https://horoscope-app-api.vercel.app",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-6a324800c239d35e73a6d59d1d79df4f8a1dc518e67820eb430aaa3934791ed8",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-2f6ffc90d4fd83f45f8a86e35bfb982d78a5209662a78506cd7e7784f010887d",
+    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
   }
 }
