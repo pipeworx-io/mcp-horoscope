@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-horoscope",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Horoscope MCP — wraps the keyless Horoscope App API. https://horoscope-app-api.vercel.app",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-horoscope": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "horoscope"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-horoscope.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/horoscope",
   "pipeworx": {
-    "sourceHash": "v1-2f6ffc90d4fd83f45f8a86e35bfb982d78a5209662a78506cd7e7784f010887d",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "horoscope",
+    "gatewaySlug": "horoscope",
+    "sourceHash": "v1-f973b845d7ac9f1c7eddfc29a6281e645b3adcde7d7547f23ddc7c650ea1fa38",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }

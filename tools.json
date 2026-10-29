@@ -1,0 +1,54 @@
+[
+  {
+    "name": "daily_horoscope",
+    "description": "Get the daily horoscope for a zodiac sign. Returns the prediction text for a given day (today, tomorrow, yesterday, or a specific YYYY-MM-DD date). Useful for \"what is my horoscope today\" style questions.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sign": {
+          "type": "string",
+          "description": "Zodiac sign (case-insensitive). One of: aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces."
+        },
+        "day": {
+          "type": "string",
+          "description": "Day to fetch. One of TODAY, TOMORROW, YESTERDAY, or a date in YYYY-MM-DD format. Defaults to TODAY."
+        }
+      },
+      "required": [
+        "sign"
+      ]
+    }
+  },
+  {
+    "name": "weekly_horoscope",
+    "description": "Get the weekly horoscope for a zodiac sign. Returns the prediction text covering the current week.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sign": {
+          "type": "string",
+          "description": "Zodiac sign (case-insensitive). One of: aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces."
+        }
+      },
+      "required": [
+        "sign"
+      ]
+    }
+  },
+  {
+    "name": "monthly_horoscope",
+    "description": "Get the monthly horoscope for a zodiac sign. Returns the prediction text for the current month plus challenging and standout days.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sign": {
+          "type": "string",
+          "description": "Zodiac sign (case-insensitive). One of: aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces."
+        }
+      },
+      "required": [
+        "sign"
+      ]
+    }
+  }
+]
